@@ -29,8 +29,8 @@
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
 		<property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=SSM_Login_Experiment" />
-		<property name="username" value="sa" />
-		<property name="password" value="123456" />
+		<property name="username" value="Your UserName !" />
+		<property name="password" value="Your Password !" />
 	</bean>
 	
 	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
