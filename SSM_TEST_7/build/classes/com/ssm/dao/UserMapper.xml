@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.ssm.dao.UserMapper">
+	
+	<select id="LoginSelect" parameterType="String" resultType="com.ssm.pojo.Users">
+		select * from dbo.[Users] where username=#{username}
+	</select>
+	
+	<select id="LoginSelect1" parameterType="String" resultType="com.ssm.pojo.Users">
+		select * from dbo.[Users] where username=#{username}
+	</select>
+	
+	<insert id="Register" parameterType="com.ssm.pojo.Users" >
+		Insert into dbo.[Users](userid,username,userpassword,useraddress) values(#{userid},#{username},#{userpassword},#{useraddress}) 
+	</insert>
+	
+  </mapper>
